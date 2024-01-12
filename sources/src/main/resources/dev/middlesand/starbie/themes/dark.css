@@ -1,0 +1,119 @@
+/* VARIABLE DEFINITIONS: Only these 4 variables have to be adjusted, the rest is copy-paste */
+* {
+    -fx-my-menu-color: #263238;                  /* Change according to your needs */
+    -fx-my-menu-color-highlighted: #455a64;      /* Change according to your needs */
+    -fx-my-menu-font-color: #FFFFFF;             /* Change according to your needs */
+    -fx-my-menu-font-color-highlighted: #FFFFFF; /* Change according to your needs */
+}
+
+/* MENU BAR + Top-level MENU BUTTONS */
+/*** The menu bar itself ***/
+.menu-bar {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** Top-level menu itself (not selected / hovered) ***/
+.menu-bar > .container > .menu-button {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** Top-level menu's label (not selected / hovered) ***/
+.menu-bar > .container > .menu-button > .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** Top-level menu's label (disabled) ***/
+.menu-bar > .container > .menu-button > .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** Top-level menu itself (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** Top-level menu's label (selected / hovered) ***/
+.menu-bar > .container > .menu-button:hover > .label,
+.menu-bar > .container > .menu-button:focused > .label,
+.menu-bar > .container > .menu-button:showing > .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* MENU ITEM (children of a MENU BUTTON) */
+/*** The item itself (not hovered / focused) ***/
+.menu-item {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+/*** The item's label (not hovered / focused) ***/
+.menu-item .label {
+    -fx-text-fill: -fx-my-menu-font-color;
+}
+
+/*** The item's label (disabled) ***/
+.menu-item .label:disabled {
+    -fx-opacity: 1.0;
+}
+
+/*** The item itself (hovered / focused) ***/
+.menu-item:focused, .menu-item:hovered {
+    -fx-background-color: -fx-my-menu-color-highlighted;
+}
+
+/*** The item's label (hovered / focused) ***/
+.menu-item:focused .label, .menu-item:hovered .label {
+    -fx-text-fill: -fx-my-menu-font-color-highlighted;
+}
+
+/* CONTEXT MENU */
+/*** The context menu that contains a menu's menu items ***/
+.context-menu {
+    -fx-background-color: -fx-my-menu-color;
+}
+
+.fusion-background {
+    -fx-background-color: 
+        rgba(0,0,0,1),
+        linear-gradient(#222, #000);
+    -fx-background-insets: 0, 0;
+    -fx-background-radius: 0, 0;
+    -fx-text-fill: rgba(255,255,255,1);
+}
+
+.fusion-image-background {
+     -fx-background-image: url("../../../../images/testicon1.png");
+     -fx-background-repeat: space;
+     -fx-background-size: 100% 100%;
+     -fx-background-position: center center;
+}
+
+.fusion-label {
+     -fx-text-fill: rgba(255,255,255,1);
+}
+
+.fusion-button {
+    -fx-background-color: 
+        rgba(0,0,0,0.08),
+        linear-gradient(#9a9a9a, #909090),
+        linear-gradient(white 0%, #f3f3f3 50%, #ececec 51%, #f2f2f2 100%);
+    -fx-background-insets: 0 0 0 0,0,1;
+    -fx-background-radius: 100,100,100;
+    -fx-border-style: none;
+    -fx-padding: 3 30 3 30;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 14px;
+}
+
+.fusion-button:hover {
+      -fx-background-color:
+          rgba(0,0,0,0.08),
+          linear-gradient(#D5BFF2 0%,#D2AFFF 10%, #6F0EEE 50%, #43009B 51%, #8267A5 100%);
+      -fx-background-insets: 0 0 -1 0,1;
+      -fx-background-radius: 100,100,100;
+      -fx-border-style: none;
+      -fx-padding: 3 30 3 30;
+      -fx-text-fill: #ffffff;
+      -fx-font-size: 14px;
+}

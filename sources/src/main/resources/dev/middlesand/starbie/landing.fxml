@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" styleClass="fusion-image-background" stylesheets="@themes/dark.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.middlesand.starbie.views.LandingScreen">
+   <children>
+      <MenuBar stylesheets="@themes/dark.css">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="menu-item" text="File">
+            <items>
+              <Menu mnemonicParsing="false" text="New">
+                <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onCreateNewProject" text="Project..." />
+                  <MenuItem mnemonicParsing="false" text="File..." />
+                  <MenuItem mnemonicParsing="false" text="Existential Dread..." />
+                </items>
+              </Menu>
+              <MenuItem mnemonicParsing="false" text="Open..." />
+                  <Menu mnemonicParsing="false" text="Recent Projects">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Loading..." />
+                    </items>
+                  </Menu>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Tools">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Browse..." />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Window">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Tool Browser..." />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Documentation" />
+                  <MenuItem mnemonicParsing="false" text="Discord" />
+                  <MenuItem mnemonicParsing="false" text="About">
+                     <graphic>
+                        <DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="480.0">
+                            <header>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                            </header>
+                            <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                            </content>
+                            <expandableContent>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+                            </expandableContent>
+                           <buttonTypes>
+                              <ButtonType fx:constant="OK" />
+                           </buttonTypes>
+                        </DialogPane>
+                     </graphic>
+                  </MenuItem>
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</VBox>

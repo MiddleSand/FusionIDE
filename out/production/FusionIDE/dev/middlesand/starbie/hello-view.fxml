@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<TabPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.middlesand.starbie.HelloController">
+   <tabs>
+      <Tab text="Welcome">
+         <content>
+            <VBox alignment="CENTER" prefHeight="187.0" prefWidth="520.0" spacing="20.0">
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                </padding>
+            
+                <Label fx:id="welcomeText" text="Welcome to StarBIE!">
+                  <font>
+                     <Font name="Arial" size="32.0" />
+                  </font>
+               </Label>
+               <Label fx:id="welcomeText1" layoutX="189.0" layoutY="30.0" text="No configuration has been detected!" />
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                      <Button onAction="#onHelloButtonClick" text="Autoconfigure" textAlignment="CENTER" />
+                     <Button layoutX="10.0" layoutY="41.0" onAction="#onHelloButtonClick" text="Configure Manually" textAlignment="CENTER" />
+                  </children>
+               </HBox>
+            </VBox>
+         </content>
+      </Tab>
+   </tabs>
+</TabPane>

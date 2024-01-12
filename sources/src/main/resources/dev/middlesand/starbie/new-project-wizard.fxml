@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="fusion-background" stylesheets="@themes/dark.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.middlesand.starbie.views.NewProjectWizard">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="759.0" style="-fx-background-color: rgbs(75, 75, 75, 1);">
+               <children>
+                  <Label styleClass="fusion-label" text="New Project" />
+               </children></HBox>
+            <Separator opacity="0.0" prefHeight="25.0" prefWidth="600.0" />
+            <Label styleClass="fusion-label" text="Project Type:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ChoiceBox prefWidth="456.0" styleClass="fusion-button" value="Default">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="Default" />
+                  </FXCollections>
+               </items>
+            </ChoiceBox>
+            <Separator opacity="0.0" prefHeight="31.0" prefWidth="600.0" />
+            <Button mnemonicParsing="false" onMouseClicked="#onPickRootDirectory" styleClass="fusion-button" text="Select Root Directory" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
