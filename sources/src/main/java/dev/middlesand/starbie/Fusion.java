@@ -17,6 +17,7 @@ public class Fusion extends Application {
 
 
     private static Stage theStage;
+
     public static Stage getStage()
     {
         return theStage;
@@ -42,6 +43,7 @@ public class Fusion extends Application {
             stage.getIcons().add(new javafx.scene.image.Image(Fusion.class.getResourceAsStream("/images/testicon1.png")));
             stage.setScene(scene);
             stage.show();
+            stage.setMaximized(true);
         }
         else
         {

@@ -2,15 +2,10 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.middlesand.starbie.views.MainController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600" prefWidth="1080.0" styleClass="fusion-background" stylesheets="@themes/dark.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.middlesand.starbie.views.MainController">
    <children>
-      <MenuBar>
+      <MenuBar VBox.vgrow="ALWAYS">
         <menus>
             <Menu mnemonicParsing="false" text="Fusion">
                <items>
@@ -46,10 +41,26 @@
             </Menu>
         </menus>
       </MenuBar>
-      <ScrollPane prefHeight="200.0" prefWidth="200.0">
-        <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
-        </content>
-      </ScrollPane>
+      <HBox prefHeight="615.0" prefWidth="600.0" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox maxWidth="400.0" prefWidth="600.0" HBox.hgrow="SOMETIMES">
+               <children>
+                  <TreeView fx:id="filetree" maxWidth="400.0" VBox.vgrow="ALWAYS">
+                      <TreeItem expanded="true" value="Project">
+                          <children>
+                              <TreeItem value="rrr" />
+                              <TreeItem value="secondChild" />
+                          </children>
+                      </TreeItem>
+                  </TreeView>
+               </children>
+            </VBox>
+            <TabPane HBox.hgrow="ALWAYS">
+              <tabs>
+                <Tab text="Home" />
+              </tabs>
+            </TabPane>
+         </children>
+      </HBox>
    </children>
 </VBox>

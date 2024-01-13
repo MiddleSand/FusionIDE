@@ -8,6 +8,7 @@ module dev.middlesand.starbie {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires com.google.gson;
 
     opens dev.middlesand.starbie to javafx.fxml;
     exports dev.middlesand.starbie;
